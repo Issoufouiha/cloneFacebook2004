@@ -1,9 +1,45 @@
 .App {
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.nav{
+  display: flex;
+  background-color: #3b5999;
+  justify-content: center;
+  margin: auto;
+  width: 700px;
+  justify-content: space-between;
+  height: 7rem;
+}
+.img{
+  display: flex;
+  justify-content: start;
+  width: 50%;
+}
+#ulRigth{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  flex-direction: column;
+}
+li{
+  list-style: none;
+  color: white;
+  cursor: pointer;
+
+}
+.side{
+  width: 200px;
+}
+#myForm{
+  padding: 0;
 }
 
+
 .App-logo {
-  height: 40vmin;
   pointer-events: none;
 }
 
