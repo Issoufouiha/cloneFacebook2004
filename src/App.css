@@ -10,7 +10,6 @@
   background-color: #3b5999;
   justify-content: center;
   margin: auto;
-  width: 700px;
   justify-content: space-between;
   height: 7rem;
 }
@@ -80,11 +79,9 @@ button{
 }
 .Well{
   border: 1px solid #3b5999 ;
-  padding: 10px;
 }
 .titre{
   background-color:#3b5999 ;
-  width: 506px;
   height: 18px;
   margin-top: -20px;
 
