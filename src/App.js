@@ -1,6 +1,5 @@
 import './App.css';
 import Welcom from "./component/welcom";
-import Register from "./component/register";
 
 
 function App() {
