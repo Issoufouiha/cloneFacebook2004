@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Welcom from "./component/welcom";
 import Register from "./component/register";
+import Login from "./component/login";
 import { createBrowserRouter, RouterProvider,
 } from "react-router-dom";
 
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
   {
     path: "/register",
     element: <Register/>,
+  },
+  {
+    path: "/login",
+    element: <Login/>,
   },
 ]);
 

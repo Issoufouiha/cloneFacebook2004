@@ -18,17 +18,19 @@ export default function Welcom() {
         e.preventDefault();
         try {
           // Créez l'utilisateur avec email et mot de passe
-          const userCredential =  auth.createUserWithEmailAndPassword(email, password);
+          const userCredential = await auth.createUserWithEmailAndPassword(email, password);
     
           // Ajoutez des informations supplémentaires à la base de données Firestore
           await firestore.collection('users').doc(userCredential.user.uid).set({
             names,
             statu,
           });
+          <Toaster/>
+          notifySucces();
+          alert('compte enregistre avec sucesse')
     
-          console.log('Utilisateur enregistré avec succès !');
         } catch (error) {
-            console.log('Utilisateur non enregistre!');
+            alert(error.message);
         }
       };
     return (
